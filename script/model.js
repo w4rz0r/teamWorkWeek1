@@ -76,15 +76,15 @@ const model = {
             { rewardId: 7, image: '#', value: 1200, type: 'nft' },
             { rewardId: 8, image: '#', value: 1200, type: 'nft' },
             { rewardId: 9, image: '#', value: 1200, type: 'nft' },
-            { rewardId: 1, image: '#', value: 1200, type: 'coupons' },
-            { rewardId: 2, image: '#', value: 1200, type: 'coupons' },
-            { rewardId: 3, image: '#', value: 1200, type: 'coupons' },
-            { rewardId: 4, image: '#', value: 1200, type: 'coupons' },
-            { rewardId: 5, image: '#', value: 1200, type: 'coupons' },
-            { rewardId: 6, image: '#', value: 1200, type: 'coupons' },
-            { rewardId: 7, image: '#', value: 1200, type: 'coupons' },
-            { rewardId: 8, image: '#', value: 1200, type: 'coupons' },
-            { rewardId: 9, image: '#', value: 1200, type: 'coupons' }
+            { rewardId: 10, image: '#', value: 1200, type: 'coupons' },
+            { rewardId: 11, image: '#', value: 1200, type: 'coupons' },
+            { rewardId: 12, image: '#', value: 1200, type: 'coupons' },
+            { rewardId: 13, image: '#', value: 1200, type: 'coupons' },
+            { rewardId: 14, image: '#', value: 1200, type: 'coupons' },
+            { rewardId: 15, image: '#', value: 1200, type: 'coupons' },
+            { rewardId: 16, image: '#', value: 1200, type: 'coupons' },
+            { rewardId: 17, image: '#', value: 1200, type: 'coupons' },
+            { rewardId: 18, image: '#', value: 1200, type: 'coupons' }
         ],
 
         users:
@@ -115,15 +115,15 @@ const model = {
 
         doneExercises:
         [
-            {exerciseId: 1, reps: 12, weekNo: 12, userId: 7, repsPerOneCurrency: 6},
-            {exerciseId: 2, reps: 12, weekNo: 12, userId: 8, repsPerOneCurrency: 6},
-            {exerciseId: 3, reps: 12, weekNo: 12, userId: 13, repsPerOneCurrency: 6},
+            { exerciseId: 1, reps: 12, weekNo: 12, userId: 7, repsPerOneCurrency: 6 },
+            { exerciseId: 2, reps: 12, weekNo: 12, userId: 8, repsPerOneCurrency: 6 },
+            { exerciseId: 3, reps: 12, weekNo: 12, userId: 13, repsPerOneCurrency: 6 }
         ],
         inventory:
         [
-            {userId: 7, rewardId: 9, currency: 377, inventoryid: 4},
-            {userId: 8, rewardId: 6, currency: 913, inventoryid: 7},
-            {userId: 13, rewardId: 23, currency: 17, inventoryid: 15},
+            { userId: 7, rewardId: 9, currency: 377, inventoryid: 4 },
+            { userId: 8, rewardId: 6, currency: 913, inventoryid: 7 },
+            { userId: 13, rewardId: 23, currency: 17, inventoryid: 15 }
         ],
     },
 
