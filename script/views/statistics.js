@@ -1,7 +1,7 @@
 views.statistics = () => {
     return /*html*/ `
-    <div>
-    <h1 style="h1">Statistics<h1> <br>
+    <div class="statisticsh1">
+    <h1>Statistics</h1>
     </div>
     
     <div class="statisticsCenter">

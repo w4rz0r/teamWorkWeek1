@@ -1,8 +1,7 @@
-h1 {
+.statisticsh1 h1 {
     font-size: 80px;
     text-align: center;
     background-color: beige;
-    height: 50px;
 }
 
 .leftbox {
