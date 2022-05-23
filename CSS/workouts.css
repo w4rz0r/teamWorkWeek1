@@ -1,0 +1,12 @@
+.workoutsTitle {
+    font-size: 48px;
+    text-align: center;
+}
+
+.workoutsContainer {
+    display: grid;
+    grid-template-columns: auto auto auto auto;
+    justify-content: center;
+    grid-gap: 100px;
+    padding: 50px;
+}
