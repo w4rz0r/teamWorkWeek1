@@ -1,5 +1,6 @@
 views.inventory = () => {
     return /*html*/ `
+    ${getNavigation()}
     <section class="inventory">
     <h1>inventory</h1>
     <div class="inventory-container">

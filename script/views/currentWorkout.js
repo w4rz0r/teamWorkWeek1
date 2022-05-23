@@ -1,5 +1,6 @@
 views.currentWorkout = () => {
     return /*html*/ `
+    ${getNavigation()}
     <div>
     <h1>Current Workout<h1> <br>
     </div>
@@ -9,7 +10,8 @@ views.currentWorkout = () => {
     </div>
 
     <div class="currentWorkoutButtons">
-    <button onclick="">Cancel</button><button onclick="">Done</button>
+    <button onclick="">Cancel</button>
+    <button onclick="">Done</button>
     </div>
     `;
 }

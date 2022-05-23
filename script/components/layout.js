@@ -16,7 +16,7 @@ function getNavigation() {
            <a  onclick="render('statistics')">Statistic</a>
            <a  onclick="render('workouts')">Workout</a>
            <a  onclick="render('currentWorkout')">Current</a>
-           <a  onclick="render('homepaget')">Home</a>
+           <a  onclick="render('homepage')">Home</a>
            
    
 </div>

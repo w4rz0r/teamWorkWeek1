@@ -1,5 +1,6 @@
 views.statistics = () => {
     return /*html*/ `
+    ${getNavigation()}
     <div class="statisticsh1">
     <h1>Statistics</h1>
     </div>

@@ -1,5 +1,6 @@
 views.workouts = () => {
   return /*html*/ `
+  ${getNavigation()}
   <div class="workoutsTitle">Workouts</div>
 
     <div class="workoutsContainer">
