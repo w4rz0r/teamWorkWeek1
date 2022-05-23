@@ -1,0 +1,5 @@
+function getNavigation() {
+    return /*html*/ `
+    
+    `;
+}
