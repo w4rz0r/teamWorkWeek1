@@ -1,6 +1,6 @@
 views.currentWorkout = () => {
     return /*html*/ `
-    <div class="h1">
+    <div>
     <h1>Current Workout<h1> <br>
     </div>
 
