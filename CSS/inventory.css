@@ -1,0 +1,9 @@
+.inventory {
+    border-style: solid;
+    border-color: black;
+    border-width: 5px;
+    width: 90%;
+    margin: auto;
+    text-align: center;
+    margin-top: 50px;
+}

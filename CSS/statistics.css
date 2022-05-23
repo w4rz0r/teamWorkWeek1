@@ -1,0 +1,53 @@
+.statisticsh1 h1 {
+    font-size: 80px;
+    text-align: center;
+    background-color: beige;
+}
+
+.leftbox {
+    float: left; 
+    background:Red;
+    width:20%;
+    height:230px;
+    margin-right: 150px;
+    border-radius: 2%;
+    
+}
+.middlebox {
+    float: left;
+    background:Green;
+    width:20%;
+    height:230px;
+    margin-right: 150px;
+    border-radius: 2%;
+}
+.rightbox {
+    float: left;
+    background:blue;
+    width:20%;
+    height:230px;
+    border-radius: 2%;
+}
+.bottombox {
+    text-align: center;
+    background: purple;
+    width:50%;
+    height:300px;
+    border-radius: 2%;
+
+}
+
+.statisticsCenter {
+    
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    margin-top: 50px;
+
+}
+
+.statisticsBottom {
+    padding-top: 100px;
+    display: flex;
+    justify-content: center;
+}
