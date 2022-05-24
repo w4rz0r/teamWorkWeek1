@@ -3,7 +3,7 @@ const model = {
     //app
     state:
     {
-        page: 'statistics',
+        page: 'homepage',
         silentMode: false,
         currentWorkoutId: null,
         currentUser: null
