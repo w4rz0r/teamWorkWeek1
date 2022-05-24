@@ -3,7 +3,7 @@ function getNavigation() {
     <div class="topnav">
          
          
-    <img src="./images/Logo/logo2.svg">
+    <img class="logo" src="./images/Logo/logo2.svg">
 
            <label class="switch">
            <input type="checkbox">

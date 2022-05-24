@@ -10,7 +10,7 @@ body {
     width: 100%;
     background-color: rgb(43,43,43);
 }
-img {
+.logo {
     float: left;
     height: 60px;
     width: 60px;

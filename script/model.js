@@ -3,7 +3,7 @@ const model = {
     //app
     state:
     {
-        page: 'homepage',
+        page: 'rewards',
         silentMode: false,
         currentWorkoutId: null,
         currentUser: null
@@ -67,24 +67,24 @@ const model = {
     data: {
         rewards:
         [
-            { rewardId: 1, image: '#', value: 1200, type: 'nft' },
-            { rewardId: 2, image: '#', value: 1200, type: 'nft' },
-            { rewardId: 3, image: '#', value: 1200, type: 'nft' },
-            { rewardId: 4, image: '#', value: 1200, type: 'nft' },
-            { rewardId: 5, image: '#', value: 1200, type: 'nft' },
-            { rewardId: 6, image: '#', value: 1200, type: 'nft' },
-            { rewardId: 7, image: '#', value: 1200, type: 'nft' },
-            { rewardId: 8, image: '#', value: 1200, type: 'nft' },
-            { rewardId: 9, image: '#', value: 1200, type: 'nft' },
-            { rewardId: 10, image: '#', value: 1200, type: 'coupons' },
-            { rewardId: 11, image: '#', value: 1200, type: 'coupons' },
-            { rewardId: 12, image: '#', value: 1200, type: 'coupons' },
-            { rewardId: 13, image: '#', value: 1200, type: 'coupons' },
-            { rewardId: 14, image: '#', value: 1200, type: 'coupons' },
-            { rewardId: 15, image: '#', value: 1200, type: 'coupons' },
-            { rewardId: 16, image: '#', value: 1200, type: 'coupons' },
-            { rewardId: 17, image: '#', value: 1200, type: 'coupons' },
-            { rewardId: 18, image: '#', value: 1200, type: 'coupons' }
+            { rewardId: 1, image: '/images/nft/monkey1.png', cost: 1200, type: 'nft', name: 'nft 1' },
+            { rewardId: 2, image: '/images/nft/monkey2.png', cost: 1200, type: 'nft', name: 'nft 2' },
+            { rewardId: 3, image: '/images/nft/monkey3.png', cost: 1200, type: 'nft', name: 'nft 3' },
+            { rewardId: 4, image: '/images/nft/monkey4.png', cost: 1200, type: 'nft', name: 'nft 4' },
+            { rewardId: 5, image: '/images/nft/monkey5.png', cost: 1200, type: 'nft', name: 'nft 5' },
+            { rewardId: 6, image: '/images/nft/monkey6.png', cost: 1200, type: 'nft', name: 'nft 6' },
+            { rewardId: 7, image: '/images/nft/monkey7.png', cost: 1200, type: 'nft', name: 'nft 7' },
+            { rewardId: 8, image: '/images/nft/monkey8.png', cost: 1200, type: 'nft', name: 'nft 8' },
+            { rewardId: 9, image: '/images/nft/monkey9.png', cost: 1200, type: 'nft', name: 'nft 9' },
+            { rewardId: 10, image: '/images/coupon/coupon1.png', cost: 1200, type: 'coupons', name: 'popcorn' },
+            { rewardId: 11, image: '/images/coupon/coupon2.png', cost: 1200, type: 'coupons', name: 'cookies and cream' },
+            { rewardId: 12, image: '/images/coupon/coupon3.png', cost: 1200, type: 'coupons', name: 'a bag of skittles' },
+            { rewardId: 13, image: '/images/coupon/coupon4.png', cost: 1200, type: 'coupons', name: 'bag of chips' },
+            { rewardId: 14, image: '/images/coupon/coupon5.png', cost: 1200, type: 'coupons', name: 'bag of donuts' },
+            { rewardId: 15, image: '/images/coupon/coupon6.png', cost: 1200, type: 'coupons', name: 'strawberries and chocolate' },
+            { rewardId: 16, image: '/images/coupon/coupon7.png', cost: 1200, type: 'coupons', name: 'chocolate chips' },
+            { rewardId: 17, image: '/images/coupon/coupon8.png', cost: 1200, type: 'coupons', name: 'slice of cake' },
+            { rewardId: 18, image: '/images/coupon/coupon9.png', cost: 1200, type: 'coupons', name: 'coco with cream' }
         ],
 
         users:
