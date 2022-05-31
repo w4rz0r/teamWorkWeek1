@@ -9,7 +9,7 @@ views.homepage = () => {
 
     <h1 class="textHomepage">text</h1>
 
-    <img src="/images/homepage/homeImage.png" id="homepageImage">
+    
     </div>
     `;
 }
