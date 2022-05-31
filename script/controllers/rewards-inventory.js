@@ -8,7 +8,7 @@ function printNft() {
             <div class="rewards-col">
                 <img src="${reward.image}">
                 <div class="layer2">
-                    <h3>${reward.name}</h3>
+                    <h3>${reward.name}<br>${reward.cost}$</h3>
                 </div>
             </div>
         </div>
@@ -28,7 +28,7 @@ function printCoupon() {
             <div class="rewards-col">
                 <img src="${reward.image}">
                 <div class="layer2">
-                    <h3>${reward.name}</h3>
+                    <h3>${reward.name}<br>${reward.cost}$</h3>
                 </div>
             </div>
         </div>
@@ -36,4 +36,8 @@ function printCoupon() {
     }});
     html = `<div class="rewards-container">`;
     return rewardsHtml;
+}
+
+function moveFromRewardsToInventory(object) {
+    boughtItem = model.data.rewards.unshift(object, 1);
 }
