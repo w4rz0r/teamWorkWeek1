@@ -1,20 +1,24 @@
 h1 {
     font-size: 40px;
     text-align: center;
+    color: white;
 }
 
 .content {
-    font-size: 65px;
+    font-size: 35px;
     text-align: center;
     margin: auto;
     color: white;
     background-color: black;
-    width: 500px;
+    width: 650px;
     height: 500px;
     border-style: solid;
     border-radius: 2%;
     
 }
+/* .currentWorkoutDescription {
+    
+} */
 
 .currentWorkoutButtons {
 text-align: center;
@@ -26,4 +30,8 @@ margin-inline: 80px;
 margin-top: 30px;
 color: black;
 background-color: lightgrey;
+}
+.currentPic {
+    width: 300px;
+    height: 300px;
 }

@@ -1,4 +1,5 @@
 views.currentWorkout = () => {
+    const currentWorkOut = model.workouts[model.state.currentWorkoutId - 1];
     return /*html*/ `
     ${getNavigation()}
     <div>
@@ -6,11 +7,13 @@ views.currentWorkout = () => {
     </div>
 
     <div class="content">
-    <div>The workout:</div>
+    <div>The workout:<br>${currentWorkOut.name}</div>
+    <img class="currentPic" src="${currentWorkOut.img}"> <br>
+    <p class="currentWorkoutDescription">${currentWorkOut.description}</p> 
     </div>
 
     <div class="currentWorkoutButtons">
-    <button onclick="">Cancel</button>
+    <button onclick="setPickedWorkoutToDefault()">Cancel</button>
     <button onclick="">Done</button>
     </div>
     `;

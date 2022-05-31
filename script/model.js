@@ -3,7 +3,7 @@ const model = {
     //app
     state:
     {
-        page: 'rewards',
+        page: 'currentWorkout',
         silentMode: false,
         currentWorkoutId: null,
         currentUser: null
@@ -14,9 +14,9 @@ const model = {
     {
         currentWorkoutInput:
         {
-            searchText: '',
-            reps: null,
-            weekNo: 12
+            id: null,
+            name: '',
+            img: ''
         },
 
         rewardInput:
@@ -32,33 +32,45 @@ const model = {
     workouts: [
         {
             id: 1,
-            name: 'pushup',
-            img: 'https://images.unsplash.com/photo-1571019614242-c5c5dee9f50b?ixlib=rb-1.2.1&raw_url=true&q=80&fm=jpg&crop=entropy&cs=tinysrgb&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1470',
+            name: 'Pushup',
+            img: 'http://www.stack.com/wp-content/uploads/2012/10/Flex_o001_2_-e1350409352620.jpg',
+            rep: 10,
+            description: 'Do 10 pushups with or without having your knees down.',
         },
         {
             id: 2,
-            name: 'situps',
+            name: 'Situps',
             img: 'https://cdn.shopify.com/s/files/1/1876/4703/articles/shutterstock_1201684204_2000x.jpg?v=1595509682',
+            rep: 10,
+            description:'Do 10 situps.',
         },
         {
             id: 3,
-            name: 'squats',
+            name: 'Squats',
             img: 'https://images.unsplash.com/photo-1567598508481-65985588e295?crop=entropy&cs=tinysrgb&fm=jpg&ixlib=rb-1.2.1&q=80&raw_url=true&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1470',
+            rep: 10,
+            description:'Do 10 squats.',
         },
         {
             id: 4,
-            name: 'planking',
-            img: 'https://images.unsplash.com/photo-1626444231642-6bd985bca16a?crop=entropy&cs=tinysrgb&fm=jpg&ixlib=rb-1.2.1&q=80&raw_url=true&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1469',
+            name: 'Planking',
+            img: 'https://chicagohealthonline.com/wp-content/uploads/2020/06/premium-health-planking-20200610-1170x700.jpg.webp',
+            rep: 40,
+            description:'Plank for 40 seconds.',
         },
         {
             id: 5,
-            name: 'wallSit',
+            name: 'Wall sit',
             img: 'https://images.shape.mdpcdn.com/sites/shape.com/files/styles/slide/public/exercise/2B-wall-sit.jpg',
+            rep: 40,
+            description:'Wall sit for 40 seconds.',
         },
         {
             id: 6,
-            name: 'jumpingJacks',
-            img: 'https://images.unsplash.com/photo-1514994667787-b48ca37155f0?crop=entropy&cs=tinysrgb&fm=jpg&ixlib=rb-1.2.1&q=80&raw_url=true&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1480',
+            name: 'Jumping jacks',
+            img: 'https://www.researchgate.net/profile/Mohammed-Abou-Elmagd/publication/341734848/figure/fig1/AS:896516470362114@1590757591713/Sample-of-Jumping-Jacks-Exercise-4_Q640.jpg',
+            rep: 10,
+            description:'Do 10 jumping jacks.',
         },
 
     ],
