@@ -10,15 +10,15 @@ function getNewWorkOut() {
     return ww;
 }
 
-function setPickedWorkoutToDefault() {
-    currentWorkOut = {
-        id: null,
-        name: '',
-        img: '',
-        rep: null,
-        description: ''
-    }
-}
+// function setPickedWorkoutToDefault() {
+//     currentWorkOut = {
+//         id: null,
+//         name: '',
+//         img: '',
+//         rep: null,
+//         description: ''
+//     }
+// }
 
 
 
