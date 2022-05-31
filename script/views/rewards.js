@@ -3,18 +3,14 @@ views.rewards = () => {
     ${getNavigation()}
 
     <section class="rewards">
-    <h1>Choose Your rewards</h1>
-    <p>NFT'S</p>
+        <h1>Choose Your rewards</h1>
+        <p>NFT'S</p>
+        ${printNft()}
+    </section>
 
-    ${printRewards()}
-
-    
-</section>
-
-<section class="rewards">
-<h1>Roadmap</h1>
-<p>coupons</p> 
-
-</section>
-    `;
-}
+    <section class="rewards">
+        <h1>Roadmap</h1>
+        <p>coupons</p> 
+        ${printCoupon()}
+    </section>
+`;}

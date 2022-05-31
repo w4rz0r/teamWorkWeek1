@@ -50,16 +50,14 @@
 }
 
 .layer2:hover h3 {
-    bottom: 40%;
+    bottom: 35%;
     opacity: 1;
 }
 
 .row {
     margin-top: 5%;
     display: flex;
-    justify-content: space-between;
-}
-
-.rewards-container {
-    display: flexbox;
+    flex-basis: auto;
+    display: inline-block;
+    min-width: 30%;
 }

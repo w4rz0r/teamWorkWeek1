@@ -3,7 +3,7 @@ const model = {
     //app
     state:
     {
-        page: 'currentWorkout',
+        page: 'inventory',
         silentMode: false,
         currentWorkoutId: null,
         currentUser: null
@@ -81,7 +81,6 @@ const model = {
         [
             { rewardId: 1, image: '/images/nft/monkey1.png', cost: 1200, type: 'nft', name: 'nft 1' },
             { rewardId: 2, image: '/images/nft/monkey2.png', cost: 1200, type: 'nft', name: 'nft 2' },
-            { rewardId: 3, image: '/images/nft/monkey3.png', cost: 1200, type: 'nft', name: 'nft 3' },
             { rewardId: 4, image: '/images/nft/monkey4.png', cost: 1200, type: 'nft', name: 'nft 4' },
             { rewardId: 5, image: '/images/nft/monkey5.png', cost: 1200, type: 'nft', name: 'nft 5' },
             { rewardId: 6, image: '/images/nft/monkey6.png', cost: 1200, type: 'nft', name: 'nft 6' },
@@ -93,7 +92,7 @@ const model = {
             { rewardId: 12, image: '/images/coupon/coupon3.png', cost: 1200, type: 'coupons', name: 'a bag of skittles' },
             { rewardId: 13, image: '/images/coupon/coupon4.png', cost: 1200, type: 'coupons', name: 'bag of chips' },
             { rewardId: 14, image: '/images/coupon/coupon5.png', cost: 1200, type: 'coupons', name: 'bag of donuts' },
-            { rewardId: 15, image: '/images/coupon/coupon6.png', cost: 1200, type: 'coupons', name: 'strawberries and chocolate' },
+            { rewardId: 15, image: '/images/coupon/coupon6.png', cost: 1200, type: 'coupons', name: 'berries and chocolate' },
             { rewardId: 16, image: '/images/coupon/coupon7.png', cost: 1200, type: 'coupons', name: 'chocolate chips' },
             { rewardId: 17, image: '/images/coupon/coupon8.png', cost: 1200, type: 'coupons', name: 'slice of cake' },
             { rewardId: 18, image: '/images/coupon/coupon9.png', cost: 1200, type: 'coupons', name: 'coco with cream' }
@@ -104,6 +103,7 @@ const model = {
             {
                 id: 7,
                 name: 'kong Terje',
+                currency: 377
                 // doneExercises:
                 // [
                 //     { exerciseId: 1, reps: 12, weekNo: 12 },
@@ -117,11 +117,13 @@ const model = {
             {
                 id: 8,
                 name: 'Benjamin',
+                currency: 913,
             },
             
             {
                 id: 13,
-                name: 'aristoteles'
+                name: 'aristoteles',
+                currency: 17,
             },
         ],
 
