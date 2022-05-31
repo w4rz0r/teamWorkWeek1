@@ -3,7 +3,6 @@
   box-sizing: border-box;
     padding: 0;
     margin: 0;
-    background-color: #262a24;
 }
 li, a, span {
   font-family:Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
@@ -53,9 +52,9 @@ padding: 30px 10%;
 /*Switch*/
 .switch {
   float: left;
-  position: relative; */
+  position: relative;
   display: inline-block;
-   width: 30px;
+  width: 30px;
   height: 14px;
 }
 .switch input {
@@ -111,12 +110,10 @@ input:checked + .slider:before {
 }
 
 
-/* body {
-    font-family: 'Open Sans', sans-serif;
-    height: 100vh;
-    width: 100%;
+body {
     background-color: rgb(43,43,43);
 }
+/*
 .logo {
     float: left;
     height: 60px;
