@@ -5,5 +5,43 @@
     width: 90%;
     margin: auto;
     text-align: center;
-    margin-top: 50px;
+    padding-top: 50px;
+    max-height: 530px;
+    overflow: scroll;
+}
+
+.inventory::-webkit-scrollbar {
+    width: 10px;
+}
+
+.inventory::-webkit-scrollbar-track {
+    background-color: transparent;
+}
+
+.inventory::-webkit-scrollbar-thumb {
+    border-radius: 5px;
+    background-color: black;
+}
+
+.inventory-row {
+    margin-top: 5%;
+    display: flex;
+    flex-basis: auto;
+    display: inline-block;
+    min-width: 25%;
+}
+
+.inventory-col {
+    border-radius: 10px;
+    position: relative;
+    border-style: solid;
+    border-color: black;
+    border-width: 5px;
+    height: 200px;
+}
+
+.inventory-col img {
+    width: 100%;
+    height: 100%;
+    display: block;
 }

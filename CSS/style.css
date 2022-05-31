@@ -3,7 +3,6 @@
   box-sizing: border-box;
     padding: 0;
     margin: 0;
-    background-color: #262a24;
 }
 .headLine{
   font-size: 40px;
@@ -58,9 +57,9 @@ padding: 30px 10%;
 /*Switch*/
 .switch {
   float: left;
-  position: relative; */
+  position: relative;
   display: inline-block;
-   width: 30px;
+  width: 30px;
   height: 14px;
 }
 .switch input {

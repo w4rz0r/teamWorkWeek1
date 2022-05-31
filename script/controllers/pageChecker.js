@@ -1,5 +1,6 @@
 const app = document.getElementById('app'), views = {};
 
+//sjekker om siden eksisterer, og returnerer innholdet
 function render(page) {
     if (page) model.state.page = page;
     if (!(model.state.page in views)) {
