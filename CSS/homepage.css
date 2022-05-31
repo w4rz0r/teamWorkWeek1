@@ -1,20 +1,88 @@
-body {
-    background-image: "/images/homepage/homeImage.png";
-    
+*{
+    margin: 0;
+    padding: 0;
 }
-/* #homepageImage {
-    background-position: center;
-    background-size: contain;
-    width: 100%;
-    height: 100vh;
-} */
+.homepageText {
+    border: solid #457d58 5px;
+    background-color: rgb(61, 58, 58);
 
-/* .homepageText {
-    position: relative;
-} */
-
-/* .textHomepage {
-    position: absolute;
-    left: 16px;
+}
+.hpImg{
+    width: 100vh;
+    height: 40vh;
+    justify-items: center;
     
-} */
+        
+}
+.thp1 {
+    font-size: 5vh;
+    text-align: center;
+    color: wheat;
+}
+.thp2 {
+    font-size: 7vh;
+    text-align: center;
+    color: rgb(207, 103, 17);
+   }
+.thp3 {
+    font-size: 5vh;
+    text-align: center;
+    color: #457d58;
+}
+
+
+.heart-rate {
+    width: 150px;
+    height: 73px;
+    position: relative;
+    margin: 20px auto;
+  }
+  
+  .fade-in {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background-color: rgb(61, 58, 58);
+    top: 0;
+    right: 0;
+    animation: heartRateIn 2.5s linear infinite;
+  }
+  
+  .fade-out {
+    position: absolute;
+    width: 120%;
+    height: 100%;
+    top: 0;
+    left: -120%;
+    animation: heartRateOut 2.5s linear infinite;
+    background: rgb(61, 58, 58);
+    background: -moz-linear-gradient(left, rgb(61, 58, 58) 0%, rgb(61, 58, 58) 50%, rgb(61, 58, 58) 100%);
+    background: -webkit-linear-gradient(left, rgb(61, 58, 58) 0%, rgb(61, 58, 58) 50%, rgb(61, 58, 58) 100%);
+    background: -o-linear-gradient(left, rgb(61, 58, 58) 0%, rgb(61, 58, 58) 50%, rgb(61, 58, 58) 100%);
+    background: -ms-linear-gradient(left, rgb(61, 58, 58) 0%, rgb(61, 58, 58) 50%, rgb(61, 58, 58) 100%);
+    background: linear-gradient(to right, rgb(61, 58, 58) 0%, rgb(61, 58, 58) 80%, rgb(61, 58, 58) 100%);
+  }
+  
+  @keyframes heartRateIn {
+    0% {
+      width: 100%;
+    }
+    50% {
+      width: 0;
+    }
+    100% {
+      width: 0;
+    }
+  }
+  
+  @keyframes heartRateOut {
+    0% {
+      left: -120%;
+    }
+    30% {
+      left: -120%;
+    }
+    100% {
+      left: 0;
+    }
+  }
