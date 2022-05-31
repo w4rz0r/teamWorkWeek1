@@ -1,7 +1,7 @@
 views.workouts = () => {
   return /*html*/ `
   ${getNavigation()}
-  <div class="workoutsTitle">Workouts</div>
+  <div class="headLine">Workouts</div>
 
     <div class="workoutsContainer">
         <img class="workout1" src="./images/workout/workoutPushup.png">

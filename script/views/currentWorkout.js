@@ -3,7 +3,7 @@ views.currentWorkout = () => {
     return /*html*/ `
     ${getNavigation()}
     <div>
-    <h1>Current Workout<h1> <br>
+    <h1 class="headLine">Current Workout<h1> <br>
     </div>
 
     <div class="content">
