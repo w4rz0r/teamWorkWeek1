@@ -1,7 +1,8 @@
 function getNavigation() {
+    const user = model.data.users.find((user) => user.id === model.state.currentUser);
     return /*html*/ `
     <header>
-    <img class="logo" src="./images/Logo/logo2.svg">
+    <img class="logo" src="./images/Logo/logo2.svg" onclick="render('homepage')">
             <label class="switch">
            <input type="checkbox">
             <span class="slider round"></span>
@@ -17,7 +18,7 @@ function getNavigation() {
 </ul>
     </nav>
     
-    <span class="currency">Currency: </span>
+    <span class="currency">Currency: ${user.currency}</span>
 
     </header>
     `;
