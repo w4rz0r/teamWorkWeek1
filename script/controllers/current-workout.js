@@ -27,3 +27,23 @@ function currentWorkoutInput() {
     workOut = model.workouts[randomIndex];
     model.state.currentWorkoutId = randomIndex + 1;
 }
+
+
+
+function cancelCurrentWorkout() {
+    currentWorkoutInput();
+    model.state.page = 'homepage';
+    render();
+}
+
+
+function doneCurrentWorkout() {
+    
+    model.data.doneExercises.push(model.workouts[model.state.currentWorkoutId - 1]);
+    
+
+
+    currentWorkoutInput();
+    model.state.page = 'homepage';
+    render();
+}

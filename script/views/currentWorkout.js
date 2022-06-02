@@ -13,8 +13,8 @@ views.currentWorkout = () => {
     </div>
 
     <div class="currentWorkoutButtons">
-    <button onclick="setPickedWorkoutToDefault()">Cancel</button>
-    <button onclick="">Done</button>
+    <button onclick="cancelCurrentWorkout()">Cancel</button>
+    <button onclick="doneCurrentWorkout()">Done</button>
     </div>
     `;
 }
