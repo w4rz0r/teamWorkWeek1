@@ -9,10 +9,10 @@ function getNavigation() {
             </label>
     <nav >
 <ul class="nav__links">
-        <li><a  onclick="render('homepage')">Home</a></li>
-        <li><a  onclick="render('currentWorkout')">Current</a></li>
-        <li><a  onclick="render('workouts')">Workout</a></li>
-        <li><a  onclick="render('statistics')">Statistic</a></li>
+        <li><a onclick="render('homepage')">Home</a></li>
+        <li><a onclick="render('currentWorkout')">Current</a></li>
+        <li><a onclick="render('workouts')">Workout</a></li>
+        <li><a onclick="render('statistics')">Statistic</a></li>
         <li><a onclick="render('rewards')">Rewards</a></li>
         <li><a onclick="render('inventory')">Inventory</a></li>
 </ul>
