@@ -3,10 +3,10 @@ const model = {
     //app
     state:
     {
-        page: 'inventory',
+        page: 'homepage',
         silentMode: false,
         currentWorkoutId: null,
-        currentUser: null
+        currentUser: 8
     },
 
     // inputs
@@ -103,7 +103,7 @@ const model = {
             {
                 id: 7,
                 name: 'kong Terje',
-                currency: 377
+                currency: 377,
                 // doneExercises:
                 // [
                 //     { exerciseId: 1, reps: 12, weekNo: 12 },
@@ -117,13 +117,13 @@ const model = {
             {
                 id: 8,
                 name: 'Benjamin',
-                currency: 913,
+                inventory: [],
             },
             
             {
                 id: 13,
                 name: 'aristoteles',
-                currency: 17,
+                inventory: [],
             },
         ],
 
@@ -135,9 +135,9 @@ const model = {
         ],
         inventory:
         [
-            { userId: 7, rewardId: 9, currency: 377, inventoryid: 4 },
-            { userId: 8, rewardId: 6, currency: 913, inventoryid: 7 },
-            { userId: 13, rewardId: 23, currency: 17, inventoryid: 15 }
+            { userId: 7, rewardId: 1, currency: 377, inventoryid: 1 },
+            { userId: 8, rewardId: 2, currency: 913, inventoryid: 2 },
+            { userId: 13, rewardId: 3, currency: 717, inventoryid: 3 }
         ],
     },
 

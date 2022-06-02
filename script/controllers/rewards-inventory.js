@@ -3,9 +3,9 @@ function printNft() {
     let rewardsHtml = "";
     model.data.rewards.forEach(reward => {
         if (reward.type === 'nft') {
-        rewardsHtml += `
+        rewardsHtml += /*html*/`
         <div class="row">
-            <div class="rewards-col">
+            <div class="rewards-col" onclick="moveFromRewardsToInventory(${reward.rewardId})">
                 <img src="${reward.image}">
                 <div class="layer2">
                     <h3>${reward.name}<br>${reward.cost}$</h3>
@@ -38,6 +38,23 @@ function printCoupon() {
     return rewardsHtml;
 }
 
-function moveFromRewardsToInventory(object) {
-    boughtItem = model.data.rewards.unshift(object, 1);
+function moveFromRewardsToInventory(id) {
+    const user = model.data.users.find((user) => user.id === model.state.currentUser);
+    if (!user) {
+        console.error(`user doesn't exist`);
+        return;
+    }
+    const reward = model.data.rewards.find((reward, index) => {
+        if (reward.rewardId === id) {
+            model.data.rewards.splice(index, 1);
+            return true;
+        }
+        return false;
+    });
+    if (!reward) {
+        console.error(`reward doesn't exist`);
+        return;
+    }
+    user.inventory.push(reward);
+    render();
 }
