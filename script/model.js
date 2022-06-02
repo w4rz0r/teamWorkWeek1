@@ -103,6 +103,7 @@ const model = {
             {
                 id: 7,
                 name: 'kong Terje',
+                inventory: [],
                 currency: 377,
                 // doneExercises:
                 // [
@@ -118,12 +119,14 @@ const model = {
                 id: 8,
                 name: 'Benjamin',
                 inventory: [],
+                currency: 377,
             },
             
             {
                 id: 13,
                 name: 'aristoteles',
                 inventory: [],
+                currency: 377,
             },
         ],
 
