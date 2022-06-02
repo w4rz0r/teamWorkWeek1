@@ -5,7 +5,7 @@ function printNft() {
         if (reward.type === 'nft') {
         rewardsHtml += /*html*/`
         <div class="row">
-            <div class="rewards-col" onclick="moveFromRewardsToInventory(${reward.rewardId})">
+            <div class="rewards-col" onclick="moveFromRewardsToInventory(${reward.rewardId}), printNftInventory(${reward.rewardId})">
                 <img src="${reward.image}">
                 <div class="layer2">
                     <h3>${reward.name}<br>${reward.cost}$</h3>
@@ -28,7 +28,7 @@ function printCoupon() {
             <div class="rewards-col">
                 <img src="${reward.image}">
                 <div class="layer2">
-                    <h3>${reward.name}<br>${reward.cost}$</h3>
+                    <h3>${reward.name}</h3>
                 </div>
             </div>
         </div>
