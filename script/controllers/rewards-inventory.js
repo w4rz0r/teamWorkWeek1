@@ -8,7 +8,7 @@ function printNft() {
             <div class="rewards-col" onclick="moveFromRewardsToInventory(${reward.rewardId})">
                 <img src="${reward.image}">
                 <div class="layer2">
-                    <h3>${reward.name}<br>${reward.cost}$</h3>
+                    <h3>${reward.name}<br>${reward.cost}</h3>
                 </div>
             </div>
         </div>
