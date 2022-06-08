@@ -139,18 +139,35 @@ const model = {
         doneExercises:
         [
             { exerciseId: 3, reps: 12, weekNo: 22, userId: 8, repsPerOneCurrency: 6 },
+            { exerciseId: 5, reps: 12, weekNo: 22, userId: 8, repsPerOneCurrency: 6 },
+            { exerciseId: 1, reps: 12, weekNo: 22, userId: 7, repsPerOneCurrency: 6 },
+            { exerciseId: 5, reps: 12, weekNo: 22, userId: 8, repsPerOneCurrency: 6 },
+            { exerciseId: 2, reps: 12, weekNo: 22, userId: 8, repsPerOneCurrency: 6 },
+            { exerciseId: 5, reps: 12, weekNo: 22, userId: 7, repsPerOneCurrency: 6 },
+
+            { exerciseId: 3, reps: 12, weekNo: 22, userId: 8, repsPerOneCurrency: 6 },
             { exerciseId: 6, reps: 12, weekNo: 22, userId: 8, repsPerOneCurrency: 6 },
             { exerciseId: 1, reps: 12, weekNo: 22, userId: 7, repsPerOneCurrency: 6 },
             { exerciseId: 2, reps: 12, weekNo: 22, userId: 8, repsPerOneCurrency: 6 },
             { exerciseId: 4, reps: 12, weekNo: 23, userId: 8, repsPerOneCurrency: 6 },
             { exerciseId: 2, reps: 12, weekNo: 23, userId: 8, repsPerOneCurrency: 6 },
-            { exerciseId: 3, reps: 12, weekNo: 23, userId: 8, repsPerOneCurrency: 6 }
+            { exerciseId: 6, reps: 12, weekNo: 23, userId: 8, repsPerOneCurrency: 6 }
         ],
         inventory:
         [
             { userId: 7, rewardId: 1, currency: 377, inventoryid: 1 },
             { userId: 8, rewardId: 2, currency: 913, inventoryid: 2 },
             { userId: 13, rewardId: 3, currency: 717, inventoryid: 3 }
+        ],
+
+        statisticsStats:
+        [
+            { id: 1, name: 'Pushup', value: 0 },
+            { id: 2, name: 'Situps', value: 0 },
+            { id: 3, name: 'Squats', value: 0 },
+            { id: 4, name: 'Planking', value: 0 },
+            { id: 5, name: 'Wall sit', value: 0 },
+            { id: 6, name: 'Jumping jacks', value: 0 },
         ],
     },
 
