@@ -45,6 +45,7 @@ padding: 30px 10%;
 }
 .nav__links li a:hover {
   color: #0088a9;
+  cursor: pointer;
 }
 .currency {
   padding: 9px 25px;
