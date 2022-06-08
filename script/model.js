@@ -3,7 +3,7 @@ const model = {
     //app
     state:
     {
-        page: 'rewards',
+        page: 'statistics',
         silentMode: false,
         currentWorkoutId: null,
         currentUser: 8
@@ -138,9 +138,13 @@ const model = {
 
         doneExercises:
         [
-            { exerciseId: 1, reps: 12, weekNo: 12, userId: 7, repsPerOneCurrency: 6 },
-            { exerciseId: 2, reps: 12, weekNo: 12, userId: 8, repsPerOneCurrency: 6 },
-            { exerciseId: 3, reps: 12, weekNo: 12, userId: 13, repsPerOneCurrency: 6 }
+            { exerciseId: 3, reps: 12, weekNo: 22, userId: 8, repsPerOneCurrency: 6 },
+            { exerciseId: 6, reps: 12, weekNo: 22, userId: 8, repsPerOneCurrency: 6 },
+            { exerciseId: 1, reps: 12, weekNo: 22, userId: 7, repsPerOneCurrency: 6 },
+            { exerciseId: 2, reps: 12, weekNo: 22, userId: 8, repsPerOneCurrency: 6 },
+            { exerciseId: 4, reps: 12, weekNo: 23, userId: 8, repsPerOneCurrency: 6 },
+            { exerciseId: 2, reps: 12, weekNo: 23, userId: 8, repsPerOneCurrency: 6 },
+            { exerciseId: 3, reps: 12, weekNo: 23, userId: 8, repsPerOneCurrency: 6 }
         ],
         inventory:
         [

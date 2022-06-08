@@ -7,11 +7,11 @@ views.statistics = () => {
 
     <div class="statisticsCenter">
 
-    <div class="leftbox">hei</div>
+    <div class="leftbox">Last Week: ${lastWeekResult}</div>
 
 
-    <div class="middlebox">${printStatistic()}
-    
+    <div class="middlebox">Current Week: ${result}
+    ${printStatistic()}
     </div>
 
 
