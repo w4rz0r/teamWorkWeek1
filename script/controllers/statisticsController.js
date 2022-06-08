@@ -4,6 +4,7 @@ let statisticsHtml = "";
 let weeks = [];
 
 function printStatistic() {
+  statisticsHtml = ``;
   model.data.doneExercises.forEach((doneExercise) => {
     if (doneExercise.userId === currentUser && doneExercise.weekNo === result) {
       let exerciseName = model.workouts.find(exercise => doneExercise.exerciseId === exercise.id).name;
@@ -17,7 +18,6 @@ function printStatistic() {
       if(!weeks.includes(doneExercise.weekNo)){
         weeks.push(doneExercise.weekNo);
       }
-      statisticsHtml = ``;
       statisticsHtml += `
         <div>Exercise: ${exerciseName}</div>
         <div>Reps: ${doneExercise.reps}</div><br>
