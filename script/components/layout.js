@@ -1,13 +1,13 @@
 function getNavigation() {
-    const user = model.data.users.find((user) => user.id === model.state.currentUser);
     return /*html*/ `
     <header>
+    ${user.name}
     <img class="logo" src="./images/Logo/logo2.svg" onclick="render('homepage')">
             <label class="switch">
            <input type="checkbox">
             <span class="slider round"></span>
             </label>
-    <nav >
+    <nav>
 <ul class="nav__links">
         <li><a onclick="render('homepage')">Home</a></li>
         <li><a onclick="render('currentWorkout')">Current</a></li>

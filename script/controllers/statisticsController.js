@@ -1,12 +1,7 @@
-let currentUser = model.state.currentUser;
-let workoutName = model.workouts.name;
-let statisticsHtml = "";
-let weeks = [];
-
 function printStatistic() {
   statisticsHtml = ``;
-  model.data.doneExercises.forEach((doneExercise) => {
-    if (doneExercise.userId === currentUser && doneExercise.weekNo === result) {
+  user.doneExercises.forEach((doneExercise) => {
+    if (doneExercise.weekNo === result) {
       let exerciseName = model.workouts.find(exercise => doneExercise.exerciseId === exercise.id).name;
 
       if(exerciseName === undefined) {
@@ -27,13 +22,7 @@ function printStatistic() {
   return statisticsHtml;
 }
 
-// Get current week
-currentdate = new Date();
-var oneJan = new Date(currentdate.getFullYear(),0,1);
-var numberOfDays = Math.floor((currentdate - oneJan) / (24 * 60 * 60 * 1000));
-var result = Math.ceil(( currentdate.getDay() + numberOfDays) / 7);
-var lastWeekResult = result - 1;
-console.log(`The week number of the current date (${currentdate}) is ${result}.`);
+
 
 
 function lastWeek() {
@@ -46,13 +35,35 @@ function lastWeek() {
   return lastWeekExercise;
 }
 
-plussEquals();
+// plussEquals();
+// function plussEquals() {
+//   model.data.doneExercises.forEach((doneId) => {
+//     model.data.statisticsStats.forEach((statId) => {
+//       if (doneId.exerciseId === statId.id) {
+//         statId.value += doneId.reps;
+//       }
+//     })
+//   });
+// }
+
 function plussEquals() {
-  model.data.doneExercises.forEach((doneId) => {
+  user.doneExercises.forEach((id) => {
     model.data.statisticsStats.forEach((statId) => {
-      if (doneId.exerciseId === statId.id) {
-        statId.value += doneId.reps;
+      if (id.id === statId.id) {
+      statId.value += id.reps;
       }
     })
-  });
+  })
 }
+
+
+
+
+
+  // model.data.doneExercises.forEach((doneId) => {
+  //   model.data.statisticsStats.forEach((statId) => {
+  //     if (doneId.exerciseId === statId.id) {
+  //       statId.value += doneId.reps;
+  //     }
+  //   })
+  // });

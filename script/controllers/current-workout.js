@@ -1,6 +1,6 @@
 //const currentWorkOut = model.workouts[model.state.currentWorkoutId - 1];
 // let randomIndex = null;
-const user = model.data.users.find((user) => user.id === model.state.currentUser);
+
 
 
 if (model.state.currentWorkoutId === null) {

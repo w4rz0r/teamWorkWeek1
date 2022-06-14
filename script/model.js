@@ -6,7 +6,7 @@ const model = {
         page: 'userLogin',
         silentMode: false,
         currentWorkoutId: null,
-        currentUser: 8
+        currentUser: 13,
     },
 
     // inputs
@@ -85,23 +85,23 @@ const model = {
     data: {
         rewards:
         [
-            { rewardId: 1, image: '/images/nft/monkey1.png', cost: 1200, type: 'nft', name: 'nft 1' },
-            { rewardId: 2, image: '/images/nft/monkey2.png', cost: 1200, type: 'nft', name: 'nft 2' },
-            { rewardId: 4, image: '/images/nft/monkey4.png', cost: 1200, type: 'nft', name: 'nft 4' },
-            { rewardId: 5, image: '/images/nft/monkey5.png', cost: 1200, type: 'nft', name: 'nft 5' },
-            { rewardId: 6, image: '/images/nft/monkey6.png', cost: 1200, type: 'nft', name: 'nft 6' },
-            { rewardId: 7, image: '/images/nft/monkey7.png', cost: 1200, type: 'nft', name: 'nft 7' },
-            { rewardId: 8, image: '/images/nft/monkey8.png', cost: 1200, type: 'nft', name: 'nft 8' },
-            { rewardId: 9, image: '/images/nft/monkey9.png', cost: 1200, type: 'nft', name: 'nft 9' },
-            { rewardId: 10, image: '/images/coupon/coupon1.png', cost: 1200, type: 'coupons', name: 'popcorn' },
-            { rewardId: 11, image: '/images/coupon/coupon2.png', cost: 1200, type: 'coupons', name: 'cookies and cream' },
-            { rewardId: 12, image: '/images/coupon/coupon3.png', cost: 1200, type: 'coupons', name: 'a bag of skittles' },
-            { rewardId: 13, image: '/images/coupon/coupon4.png', cost: 1200, type: 'coupons', name: 'bag of chips' },
-            { rewardId: 14, image: '/images/coupon/coupon5.png', cost: 1200, type: 'coupons', name: 'bag of donuts' },
-            { rewardId: 15, image: '/images/coupon/coupon6.png', cost: 1200, type: 'coupons', name: 'berries and chocolate' },
-            { rewardId: 16, image: '/images/coupon/coupon7.png', cost: 1200, type: 'coupons', name: 'chocolate chips' },
-            { rewardId: 17, image: '/images/coupon/coupon8.png', cost: 1200, type: 'coupons', name: 'slice of cake' },
-            { rewardId: 18, image: '/images/coupon/coupon9.png', cost: 1200, type: 'coupons', name: 'coco with cream' }
+            { rewardId: 1, image: '/images/nft/monkey1.png', cost: 200, type: 'nft', name: 'nft 1' },
+            { rewardId: 2, image: '/images/nft/monkey2.png', cost: 200, type: 'nft', name: 'nft 2' },
+            { rewardId: 4, image: '/images/nft/monkey4.png', cost: 200, type: 'nft', name: 'nft 4' },
+            { rewardId: 5, image: '/images/nft/monkey5.png', cost: 200, type: 'nft', name: 'nft 5' },
+            { rewardId: 6, image: '/images/nft/monkey6.png', cost: 200, type: 'nft', name: 'nft 6' },
+            { rewardId: 7, image: '/images/nft/monkey7.png', cost: 200, type: 'nft', name: 'nft 7' },
+            { rewardId: 8, image: '/images/nft/monkey8.png', cost: 200, type: 'nft', name: 'nft 8' },
+            { rewardId: 9, image: '/images/nft/monkey9.png', cost: 200, type: 'nft', name: 'nft 9' },
+            { rewardId: 10, image: '/images/coupon/coupon1.png', cost: 200, type: 'coupons', name: 'popcorn' },
+            { rewardId: 11, image: '/images/coupon/coupon2.png', cost: 200, type: 'coupons', name: 'cookies and cream' },
+            { rewardId: 12, image: '/images/coupon/coupon3.png', cost: 200, type: 'coupons', name: 'a bag of skittles' },
+            { rewardId: 13, image: '/images/coupon/coupon4.png', cost: 200, type: 'coupons', name: 'bag of chips' },
+            { rewardId: 14, image: '/images/coupon/coupon5.png', cost: 200, type: 'coupons', name: 'bag of donuts' },
+            { rewardId: 15, image: '/images/coupon/coupon6.png', cost: 200, type: 'coupons', name: 'berries and chocolate' },
+            { rewardId: 16, image: '/images/coupon/coupon7.png', cost: 200, type: 'coupons', name: 'chocolate chips' },
+            { rewardId: 17, image: '/images/coupon/coupon8.png', cost: 200, type: 'coupons', name: 'slice of cake' },
+            { rewardId: 18, image: '/images/coupon/coupon9.png', cost: 200, type: 'coupons', name: 'coco with cream' }
         ],
 
         users:
@@ -111,21 +111,27 @@ const model = {
                 name: 'kong Terje',
                 inventory: [],
                 currency: 377,
-                // doneExercises:
-                // [
-                //     { exerciseId: 1, reps: 12, weekNo: 12 },
-                //     { exerciseId: 1, reps: 3, weekNo: 12 },
-                //     { exerciseId: 1, reps: 21, weekNo: 12 },
-                //     { exerciseId: 2, reps: 21, weekNo: 12 }
-                // ],
-                // inventory: [],
+                doneExercises:
+                [
+                    { id: 4, name: 'Planking', reps: 12, currencyPoints: 50, weekNo: 12},
+                    { id: 1, name: 'Pushup', reps: 12, currencyPoints: 50, weekNo: 12},
+                    { id: 3, name: 'Squats', reps: 12, currencyPoints: 50, weekNo: 12},
+                    { id: 3, name: 'Squats', reps: 12, currencyPoints: 50, weekNo: 12},
+                ],
             },
 
             {
                 id: 8,
                 name: 'Benjamin',
                 inventory: [],
-                currency: 377,
+                currency: 999999,
+                doneExercises:
+                [
+                    { id: 1, name: 'Pushup', reps: 12, currencyPoints: 50, weekNo: 12},
+                    { id: 2, name: 'Situps', reps: 12, currencyPoints: 50, weekNo: 12},
+                    { id: 4, name: 'Planking', reps: 12, currencyPoints: 50, weekNo: 12},
+                    { id: 3, name: 'Squats', reps: 12, currencyPoints: 50, weekNo: 12},
+                ],
             },
             
             {
@@ -133,31 +139,14 @@ const model = {
                 name: 'aristoteles',
                 inventory: [],
                 currency: 377,
+                doneExercises:
+                [
+                    { id: 4, name: 'Planking', reps: 12, currencyPoints: 50, weekNo: 12},
+                    { id: 1, name: 'Pushup', reps: 12, currencyPoints: 50, weekNo: 12},
+                    { id: 3, name: 'Squats', reps: 12, currencyPoints: 50, weekNo: 12},
+                    { id: 1, name: 'Pushup', reps: 12, currencyPoints: 50, weekNo: 12},
+                ],
             },
-        ],
-
-        doneExercises:
-        [
-            { exerciseId: 3, reps: 12, weekNo: 22, userId: 8, repsPerOneCurrency: 6 },
-            { exerciseId: 5, reps: 12, weekNo: 22, userId: 8, repsPerOneCurrency: 6 },
-            { exerciseId: 1, reps: 12, weekNo: 22, userId: 7, repsPerOneCurrency: 6 },
-            { exerciseId: 5, reps: 12, weekNo: 22, userId: 8, repsPerOneCurrency: 6 },
-            { exerciseId: 2, reps: 12, weekNo: 22, userId: 8, repsPerOneCurrency: 6 },
-            { exerciseId: 5, reps: 12, weekNo: 22, userId: 7, repsPerOneCurrency: 6 },
-
-            { exerciseId: 3, reps: 12, weekNo: 22, userId: 8, repsPerOneCurrency: 6 },
-            { exerciseId: 6, reps: 12, weekNo: 22, userId: 8, repsPerOneCurrency: 6 },
-            { exerciseId: 1, reps: 12, weekNo: 22, userId: 7, repsPerOneCurrency: 6 },
-            { exerciseId: 2, reps: 12, weekNo: 22, userId: 8, repsPerOneCurrency: 6 },
-            { exerciseId: 4, reps: 12, weekNo: 23, userId: 8, repsPerOneCurrency: 6 },
-            { exerciseId: 2, reps: 12, weekNo: 23, userId: 8, repsPerOneCurrency: 6 },
-            { exerciseId: 6, reps: 12, weekNo: 23, userId: 8, repsPerOneCurrency: 6 }
-        ],
-        inventory:
-        [
-            { userId: 7, rewardId: 1, currency: 377, inventoryid: 1 },
-            { userId: 8, rewardId: 2, currency: 913, inventoryid: 2 },
-            { userId: 13, rewardId: 3, currency: 717, inventoryid: 3 }
         ],
 
         statisticsStats:
