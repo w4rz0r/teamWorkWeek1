@@ -1,6 +1,4 @@
-//const currentWorkOut = model.workouts[model.state.currentWorkoutId - 1];
-// let randomIndex = null;
-
+const myInterval = setInterval(decreaseCount, 1000);
 
 
 if (model.state.currentWorkoutId === null) {
@@ -40,10 +38,46 @@ function cancelCurrentWorkout() {
 
 
 function doneCurrentWorkout() {
-    model.data.doneExercises.push(model.workouts[model.state.currentWorkoutId - 1]);
+    user.doneExercises.push(model.workouts[model.state.currentWorkoutId - 1]);
     user.currency += model.workouts[model.state.currentWorkoutId - 1].currencyPoints;
 
     currentWorkoutInput();
     model.state.page = 'homepage';
     render();
 }
+
+
+
+
+let minutesLeft = 10;
+
+ //view
+//  function printTime() {
+//      let html = '';
+//      html +=/*html*/ `
+//      <div>${minutesLeft}</div>
+//      `;
+//  }
+
+
+ function decreaseCount() {
+    if (model.state.silentMode === false){
+    console.log(minutesLeft);
+     minutesLeft--;
+     if (minutesLeft < 0) {
+        minutesLeft = 10;
+        render('currentWorkout');
+     }
+     render();
+ }
+ }
+ 
+
+
+//  function pause() {
+//      if (minutesLeft == 0)
+//      minutesLeft = null;
+//  }
+
+
+

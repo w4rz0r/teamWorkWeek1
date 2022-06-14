@@ -1,10 +1,5 @@
 //printer ut NFT fra inventory til bruker til view
-function printNftInventory(id) {
-    // const user = model.data.users.find((user) => user.id === model.state.currentUser);
-    if (!user) {
-        console.error(`user doesn't exist`);
-        return;
-    }  
+function printNftInventory(id) { 
             let inventoryHtml = "";
             user.inventory.forEach(nft => {
                 inventoryHtml += `

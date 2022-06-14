@@ -5,6 +5,7 @@ const model = {
     {
         page: 'userLogin',
         silentMode: false,
+        silentModeOn: "yes",
         currentWorkoutId: null,
         currentUser: 13,
     },

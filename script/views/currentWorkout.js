@@ -9,7 +9,8 @@ views.currentWorkout = () => {
     <div class="content">
     <div>The workout:<br>${currentWorkOut.name}</div>
     <img class="currentPic" src="${currentWorkOut.img}"> <br>
-    <p class="currentWorkoutDescription">${currentWorkOut.description}</p> 
+    <p class="currentWorkoutDescription">${currentWorkOut.description}</p>
+    
     </div>
 
     <div class="currentWorkoutButtons">

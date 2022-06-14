@@ -39,11 +39,6 @@ function printCoupon() {
 }
 
 function moveFromRewardsToInventory(id) {
-    // const user = model.data.users.find((user) => user.id === model.state.currentUser);
-    if (!user) {
-        console.error(`user doesn't exist`);
-        return;
-    }
     const reward = model.data.rewards.find((reward, index) => {
         if (reward.rewardId === id) {
             model.data.rewards.splice(index, 1);
@@ -60,11 +55,6 @@ function moveFromRewardsToInventory(id) {
 }
 
 function buyItems(rewardCost, id) {
-    // const user = model.data.users.find((user) => user.id === model.state.currentUser);
-    if (!user) {
-        console.error(`user doesn't exist`);
-        return;
-    }
         if (user.currency > rewardCost) {
             user.currency -= rewardCost;
             moveFromRewardsToInventory(id);

@@ -3,8 +3,9 @@ function getNavigation() {
     <header>
     ${user.name}
     <img class="logo" src="./images/Logo/logo2.svg" onclick="render('homepage')">
+    
             <label class="switch">
-           <input type="checkbox">
+            <input type="checkbox" onchange="didToggle(this.checked)">
             <span class="slider round"></span>
             </label>
     <nav>
@@ -22,6 +23,12 @@ function getNavigation() {
 
     </header>
     `;
+}
+
+function didToggle(checkedState){
+    model.state.silentMode = checkedState;
+    console.log(checkedState);
+
 }
 // <div class="topnav">
          
