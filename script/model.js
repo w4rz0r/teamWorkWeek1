@@ -5,6 +5,7 @@ const model = {
     {
         page: 'userLogin',
         silentMode: false,
+        silentModeisChecked: 'unchecked',
         currentWorkoutId: null,
         currentUser: 13,
     },
@@ -114,9 +115,9 @@ const model = {
                 doneExercises:
                 [
                     { id: 4, name: 'Planking', reps: 12, currencyPoints: 50, weekNo: 12},
-                    { id: 1, name: 'Pushup', reps: 12, currencyPoints: 50, weekNo: 12},
-                    { id: 3, name: 'Squats', reps: 12, currencyPoints: 50, weekNo: 12},
-                    { id: 3, name: 'Squats', reps: 12, currencyPoints: 50, weekNo: 12},
+                    { id: 1, name: 'Pushup', reps: 12, currencyPoints: 50, weekNo: 23},
+                    { id: 3, name: 'Squats', reps: 12, currencyPoints: 50, weekNo: 24},
+                    { id: 3, name: 'Squats', reps: 12, currencyPoints: 50, weekNo: 26},
                 ],
             },
 
@@ -128,9 +129,9 @@ const model = {
                 doneExercises:
                 [
                     { id: 1, name: 'Pushup', reps: 12, currencyPoints: 50, weekNo: 12},
-                    { id: 2, name: 'Situps', reps: 12, currencyPoints: 50, weekNo: 12},
-                    { id: 4, name: 'Planking', reps: 12, currencyPoints: 50, weekNo: 12},
-                    { id: 3, name: 'Squats', reps: 12, currencyPoints: 50, weekNo: 12},
+                    { id: 2, name: 'Situps', reps: 12, currencyPoints: 50, weekNo: 26},
+                    { id: 4, name: 'Planking', reps: 12, currencyPoints: 50, weekNo: 26},
+                    { id: 3, name: 'Squats', reps: 12, currencyPoints: 50, weekNo: 25},
                 ],
             },
             
@@ -142,9 +143,9 @@ const model = {
                 doneExercises:
                 [
                     { id: 4, name: 'Planking', reps: 12, currencyPoints: 50, weekNo: 12},
-                    { id: 1, name: 'Pushup', reps: 12, currencyPoints: 50, weekNo: 12},
-                    { id: 3, name: 'Squats', reps: 12, currencyPoints: 50, weekNo: 12},
-                    { id: 1, name: 'Pushup', reps: 12, currencyPoints: 50, weekNo: 12},
+                    { id: 1, name: 'Pushup', reps: 12, currencyPoints: 50, weekNo: 26},
+                    { id: 3, name: 'Squats', reps: 12, currencyPoints: 50, weekNo: 26},
+                    { id: 1, name: 'Pushup', reps: 12, currencyPoints: 50, weekNo: 25},
                 ],
             },
         ],

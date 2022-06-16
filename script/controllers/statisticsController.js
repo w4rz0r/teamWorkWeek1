@@ -1,7 +1,7 @@
 function printStatistic() {
   statisticsHtml = ``;
   user.doneExercises.forEach((doneExercise) => {
-    if (doneExercise.weekNo === result) {
+    if (doneExercise.weekNo === currentWeek) {
       let exerciseName = model.workouts.find(exercise => doneExercise.exerciseId === exercise.id).name;
 
       if(exerciseName === undefined) {
@@ -22,9 +22,46 @@ function printStatistic() {
   return statisticsHtml;
 }
 
+function currentWeekStats() {
+  let currentWeekHtml = ``;
+  let thisWeek = '';
+  thisWeek = user.doneExercises.filter((weekNumber => {
+    if (weekNumber.weekNo === currentWeek) {
+      user.doneExercises.forEach((qwe) => {
+        currentWeekHtml += `
+  <div>Exercise: ${qwe.name}</div>
+  <div>Reps: ${qwe.reps}</div>
+  `;
+      }
+      )
+    }
+  }));
+  return currentWeekHtml;
+}
+
+// function currentWeekStats() {
+//   let currentWeekHtml = ``;
+//   let thisWeek = user.doneExercises;
+//   thisWeek = user.doneExercises.filter((weekNumber => {
+//     if (weekNumber.weekNo === currentWeek) {
+//       user.doneExercises.forEach((qwe) => {
+        
+//       })
+//       currentWeekHtml += `
+//   <div>Exercise: ${thisWeek.name}</div><br>
+//   <div>Reps: ${thisWeek.reps}</div>
+//   `;
+//   }
+
+//   }));
+//   return currentWeekHtml;
+// }
 
 
 
+
+
+// Gamle metoden
 function lastWeek() {
   let lastWeekExercise = ``;
    model.data.statisticsStats.forEach((exercise) => {
@@ -34,6 +71,8 @@ function lastWeek() {
   })
   return lastWeekExercise;
 }
+
+
 
 // plussEquals();
 // function plussEquals() {
@@ -67,3 +106,14 @@ function plussEquals() {
   //     }
   //   })
   // });
+
+// test();
+//   function test(){
+// const curwekResult = user.doneExercises.filter(week => week.weekNo === 25)
+// testHtml = ``;
+// console.log(curwekResult);
+// testHtml += `
+// <div> ${curwekResult.name} </div>
+// `
+// return testHtml;
+//   }
