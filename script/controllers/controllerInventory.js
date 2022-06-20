@@ -1,5 +1,5 @@
 //printer ut NFT fra inventory til bruker til view
-function printNftInventory(id) { 
+function printNftInventory() { 
             let inventoryHtml = "";
             user.inventory.forEach(nft => {
                 inventoryHtml += `
