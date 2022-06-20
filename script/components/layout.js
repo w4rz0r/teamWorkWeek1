@@ -5,7 +5,7 @@ function getNavigation() {
     <img class="logo" src="./images/Logo/logo2.svg" onclick="render('homepage')">
     
             <label class="switch">
-            <input type="checkbox" onchange="didToggle(this.checked)">
+            <input type="checkbox" ${model.state.silentModeisChecked} onchange="didToggle(this.checked)">
             <span class="slider round"></span>
             </label>
     <nav>
@@ -27,11 +27,16 @@ function getNavigation() {
 
 function didToggle(checkedState){
     model.state.silentMode = checkedState;
+    
+    if (model.state.silentMode === true) {
+    model.state.silentModeisChecked = 'checked';
+    }
+    else model.state.silentModeisChecked = 'unchecked';
     console.log(checkedState);
 
 }
 // <div class="topnav">
-         
+
          
 //     <img class="logo" src="./images/Logo/logo2.svg">
 
