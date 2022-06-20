@@ -1,4 +1,5 @@
 const myInterval = setInterval(decreaseCount, 1000);
+// 60000 for et minutt
 
 
 if (model.state.currentWorkoutId === null) {
