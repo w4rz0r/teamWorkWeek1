@@ -23,9 +23,7 @@ function getNewWorkOut() {
 
 
 function currentWorkoutInput() {
-    let randomIndex = getNewWorkOut();
-    workOut = model.workouts[randomIndex];
-    model.state.currentWorkoutId = randomIndex + 1;
+    model.state.currentWorkoutId = model.workouts[getNewWorkOut()].id;
 }
 
 
@@ -72,7 +70,7 @@ let minutesLeft = 10;
  }
  }
  
-
+ clearInterval(myInterval);
 
 //  function pause() {
 //      if (minutesLeft == 0)
