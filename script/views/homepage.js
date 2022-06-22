@@ -1,8 +1,8 @@
 views.homepage = () => {
     return /*html*/ `
     ${getNavigation()}
-    
-    <div class="homepageText">
+    <
+    <div class="homeText-container">
     <div class="thp1">Welcome to AA-N </div>
     
     <div class="thp2">Your life is better when you use it!!</div>

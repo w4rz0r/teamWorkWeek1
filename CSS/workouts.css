@@ -1,3 +1,20 @@
+:root {
+    --primary: #C0D8C0;
+    --light: #ECB390;
+    --dark:#DD4A48;
+    --bokstaver:#000000;
+  }
+  *, *::before *::after {
+      box-sizing: border-box;
+      padding: 0;
+      margin: 0;
+      font-family: Arial, Helvetica, sans-serif;
+  }
+ .workout-container{
+    position: relative;
+    top: 6vh;
+    align-items: center;
+ } 
 .workoutsTitle {
     font-size: 48px;
     text-align: center;
@@ -9,4 +26,7 @@
     justify-content: center;
     grid-gap: 100px;
     padding: 50px;
+}
+.pictu {
+    border: 2px solid var(--dark)
 }

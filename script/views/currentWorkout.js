@@ -2,9 +2,9 @@ views.currentWorkout = () => {
     const currentWorkOut = model.workouts[model.state.currentWorkoutId - 1];
     return /*html*/ `
     ${getNavigation()}
-    <div>
+    <div class="current-workout-conteiner">
     <h1 class="headLine">Current Workout<h1> <br>
-    </div>
+    
 
     <div class="content">
     <div>The workout:<br>${currentWorkOut.name}</div>
@@ -16,6 +16,8 @@ views.currentWorkout = () => {
     <div class="currentWorkoutButtons">
     <button onclick="cancelCurrentWorkout()">Cancel</button>
     <button onclick="doneCurrentWorkout()">Done</button>
+    </div>
+    
     </div>
     `;
 }
