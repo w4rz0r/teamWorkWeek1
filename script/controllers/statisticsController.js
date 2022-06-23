@@ -1,15 +1,3 @@
-// function currentWeekWorkouts() {
-//   let currentWeekHtml = ``;
-
-//   let exerciseByWeek = user.doneExercises.filter((weekNumber) => weekNumber.weekNo === currentWeek)
-//   exerciseByWeek.forEach((currentWeek) => {
-//     currentWeekHtml += `<div>Exercise: ${currentWeek.name} Reps: ${currentWeek.reps}</div>
-//     `;
-//   })
-//   console.log(exerciseByWeek);
-//   return currentWeekHtml;
-// }
-
 function currentWeekWorkouts() {
   let thisWeekExercise = ``;
    model.data.currentWeekStats.forEach((exercise) => {
@@ -19,8 +7,6 @@ function currentWeekWorkouts() {
   })
   return thisWeekExercise;
 }
-
-
 
 
 
@@ -40,6 +26,7 @@ function lastWeek() {
 
 
 function lastWeekPlussEquals() {
+  resetToDefault();
   let exerciseLastWeek = user.doneExercises.filter((weekNumber) => weekNumber.weekNo === lastWeekResult)
   exerciseLastWeek.forEach((id) => {
     model.data.lastWeekStats.forEach((statId) => {
@@ -52,46 +39,23 @@ function lastWeekPlussEquals() {
 
 
 function currentWeekPlussEquals() {
+  let thisWeeksStats = ``;
+  resetToDefault();
   let exerciseThisWeek = user.doneExercises.filter((weekNumber) => weekNumber.weekNo === currentWeek);
-  let thisWeeksExerciseByType = {};
-
-
-  exerciseThisWeek.forEach(weeklyExercise => {
-    if(!thisWeeksExerciseByType.hasOwnProperty(weeklyExercise.id)) {
-      thisWeeksExerciseByType[weeklyExercise.id] = [weeklyExercise];
-    } else thisWeeksExerciseByType[weeklyExercise.id].push(weeklyExercise);
-  });
-
-  console.log(thisWeeksExerciseByType);
-
-
-
-  // exerciseThisWeek.forEach(exercise => {
-  //   if(thisWeeksExerciseByType.length < 1) return;
-  //   thisWeeksExerciseByType.forEach(e => {
-  //     if(exercise.id != e.id) {
-  //       thisWeeksExerciseByType.push(e);
-  //       return;
-  //     }
-  //     if(exercise.id == e.id) {
-  //       exercise.reps += e.reps;
-  //     }
-  //   });
-  // });
-
-  // exerciseThisWeek.forEach((id) => {
-  //   model.data.currentWeekStats.forEach((statId) => {
-  //     if (id.id === statId.id) {
-  //     statId.value += id.reps;
-  //     }
-  //   })
-  // })
-  // console.log(exerciseThisWeek);
+  exerciseThisWeek.forEach((id) => {
+    model.data.currentWeekStats.forEach((statId) => {
+      if (id.id === statId.id) {
+      statId.value += id.reps;
+      }
+    })
+  })
+  console.log(exerciseThisWeek);
+  return thisWeeksStats;
 }
 
 
 function resetToDefault() {
-  let resetLastWeek =
+  let resetWeek =
   [
     { id: 1, name: 'Pushup', value: 0 },
     { id: 2, name: 'Situps', value: 0 },
@@ -100,7 +64,9 @@ function resetToDefault() {
     { id: 5, name: 'Wall sit', value: 0 },
     { id: 6, name: 'Jumping jacks', value: 0 },
   ]
-   model.data.lastWeekStats = resetLastWeek;
+
+  model.data.currentWeekStats = resetWeek;
+  // model.data.lastWeekStats = resetWeek;
 }
 
 

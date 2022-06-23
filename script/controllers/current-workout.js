@@ -55,10 +55,9 @@ function doneCurrentWorkout() {
         currencyPoints: currentWorkOut.currencyPoints,
         weekNo: currentWeek,
     }
-
     user.doneExercises.push(completedWorkOut);
     user.currency += currentWorkOut.currencyPoints;
-
+    currentWeekPlussEquals();
     currentWorkoutInput();
     model.state.page = 'homepage';
     render();

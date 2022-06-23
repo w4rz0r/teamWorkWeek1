@@ -114,11 +114,11 @@ const model = {
                 currency: 377,
                 doneExercises:
                 [
-                    { id: 4, name: 'Planking', reps: 12, currencyPoints: 50, weekNo: 23},
-                    { id: 4, name: 'Planking', reps: 12, currencyPoints: 50, weekNo: 23},
-                    { id: 1, name: 'Pushup', reps: 12, currencyPoints: 50, weekNo: 24},
-                    { id: 3, name: 'Squats', reps: 12, currencyPoints: 50, weekNo: 24},
-                    { id: 3, name: 'Squats', reps: 12, currencyPoints: 50, weekNo: 24},
+                    { id: 4, name: 'Planking', reps: 12, currencyPoints: 50, weekNo: 24},
+                    { id: 4, name: 'Planking', reps: 12, currencyPoints: 50, weekNo: 24},
+                    { id: 1, name: 'Pushup', reps: 12, currencyPoints: 50, weekNo: 25},
+                    { id: 3, name: 'Squats', reps: 12, currencyPoints: 50, weekNo: 25},
+                    { id: 3, name: 'Squats', reps: 12, currencyPoints: 50, weekNo: 25},
                 ],
             },
 
@@ -126,7 +126,7 @@ const model = {
                 id: 8,
                 name: 'Benjamin',
                 inventory: [],
-                currency: 999999,
+                currency: 999999999999999,
                 doneExercises:
                 [
                     { id: 1, name: 'Pushup', reps: 12, currencyPoints: 50, weekNo: 23},
