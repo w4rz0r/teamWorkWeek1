@@ -3,8 +3,6 @@ const model = {
     //app
     state:
     {
-        navBarBurger: true,
-        navBarBurgerIsclicked: 'unclicked',
         page: 'userLogin',
         silentMode: false,
         silentModeisChecked: 'unchecked',

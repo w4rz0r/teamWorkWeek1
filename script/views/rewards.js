@@ -4,7 +4,7 @@ views.rewards = () => {
 
     <section class="rewards">
         <h1 class="headLine">Choose Your rewards</h1>
-        <p class="nft-title">NFT'S</p>
+        <p>NFT'S</p>
         ${printNft()}    
     </section>
 
