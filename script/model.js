@@ -114,10 +114,11 @@ const model = {
                 currency: 377,
                 doneExercises:
                 [
-                    { id: 4, name: 'Planking', reps: 12, currencyPoints: 50, weekNo: 12},
-                    { id: 1, name: 'Pushup', reps: 12, currencyPoints: 50, weekNo: 23},
+                    { id: 4, name: 'Planking', reps: 12, currencyPoints: 50, weekNo: 23},
+                    { id: 4, name: 'Planking', reps: 12, currencyPoints: 50, weekNo: 23},
+                    { id: 1, name: 'Pushup', reps: 12, currencyPoints: 50, weekNo: 24},
                     { id: 3, name: 'Squats', reps: 12, currencyPoints: 50, weekNo: 24},
-                    { id: 3, name: 'Squats', reps: 12, currencyPoints: 50, weekNo: 26},
+                    { id: 3, name: 'Squats', reps: 12, currencyPoints: 50, weekNo: 24},
                 ],
             },
 
@@ -128,9 +129,9 @@ const model = {
                 currency: 999999,
                 doneExercises:
                 [
-                    { id: 1, name: 'Pushup', reps: 12, currencyPoints: 50, weekNo: 12},
-                    { id: 2, name: 'Situps', reps: 12, currencyPoints: 50, weekNo: 26},
-                    { id: 4, name: 'Planking', reps: 12, currencyPoints: 50, weekNo: 26},
+                    { id: 1, name: 'Pushup', reps: 12, currencyPoints: 50, weekNo: 23},
+                    { id: 2, name: 'Situps', reps: 12, currencyPoints: 50, weekNo: 24},
+                    { id: 4, name: 'Planking', reps: 12, currencyPoints: 50, weekNo: 24},
                     { id: 3, name: 'Squats', reps: 12, currencyPoints: 50, weekNo: 25},
                 ],
             },
@@ -143,14 +144,24 @@ const model = {
                 doneExercises:
                 [
                     { id: 4, name: 'Planking', reps: 12, currencyPoints: 50, weekNo: 12},
-                    { id: 1, name: 'Pushup', reps: 12, currencyPoints: 50, weekNo: 26},
-                    { id: 3, name: 'Squats', reps: 12, currencyPoints: 50, weekNo: 26},
+                    { id: 1, name: 'Pushup', reps: 12, currencyPoints: 50, weekNo: 24},
+                    { id: 3, name: 'Squats', reps: 12, currencyPoints: 50, weekNo: 24},
                     { id: 1, name: 'Pushup', reps: 12, currencyPoints: 50, weekNo: 25},
                 ],
             },
         ],
 
-        statisticsStats:
+        lastWeekStats:
+        [
+            { id: 1, name: 'Pushup', value: 0 },
+            { id: 2, name: 'Situps', value: 0 },
+            { id: 3, name: 'Squats', value: 0 },
+            { id: 4, name: 'Planking', value: 0 },
+            { id: 5, name: 'Wall sit', value: 0 },
+            { id: 6, name: 'Jumping jacks', value: 0 },
+        ],
+
+        currentWeekStats:
         [
             { id: 1, name: 'Pushup', value: 0 },
             { id: 2, name: 'Situps', value: 0 },

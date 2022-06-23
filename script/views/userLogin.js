@@ -20,7 +20,9 @@ views.userLogin = () => {
 function loginUser(loggedInAs){
 model.state.currentUser = loggedInAs;
 user = model.data.users.find((user) => user.id === model.state.currentUser);
-plussEquals();
+resetToDefault();
+lastWeekPlussEquals();
+currentWeekPlussEquals();
 render('homepage');
 }
 

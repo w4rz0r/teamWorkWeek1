@@ -13,7 +13,7 @@ views.statistics = () => {
 
 
     <div class="middlebox">Current Week: ${currentWeek}
-    ${currentWeekStats()}
+    ${currentWeekWorkouts()}
     </div>
 
 

@@ -37,8 +37,27 @@ function cancelCurrentWorkout() {
 
 
 function doneCurrentWorkout() {
-    user.doneExercises.push(model.workouts[model.state.currentWorkoutId - 1]);
-    user.currency += model.workouts[model.state.currentWorkoutId - 1].currencyPoints;
+    let currentWorkOut = model.workouts[model.state.currentWorkoutId - 1];
+    /* 
+    doneExercises: {
+    id: number;
+    name: string;
+    reps: number;
+    currencyPoints: number;
+    weekNo: number;
+    }
+    */
+
+    let completedWorkOut = {
+        id: currentWorkOut.id,
+        name: currentWorkOut.name,
+        reps: currentWorkOut.rep,
+        currencyPoints: currentWorkOut.currencyPoints,
+        weekNo: currentWeek,
+    }
+
+    user.doneExercises.push(completedWorkOut);
+    user.currency += currentWorkOut.currencyPoints;
 
     currentWorkoutInput();
     model.state.page = 'homepage';
@@ -77,6 +96,4 @@ let minutesLeft = 10;
 //      if (minutesLeft == 0)
 //      minutesLeft = null;
 //  }
-
-
 
