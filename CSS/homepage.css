@@ -5,7 +5,8 @@
 }
 .homepageText
 {
-  height: 50vh;
+  top: 10px;
+    height: 50vh;
     border: solid #457d58 5px;
     background-color: rgb(61, 58, 58);
     background: url(/images/homepage/homeImage.png);
