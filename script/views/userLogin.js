@@ -20,6 +20,7 @@ function loginUser(loggedInAs){
 model.state.currentUser = loggedInAs;
 user = model.data.users.find((user) => user.id === model.state.currentUser);
 
+
 lastWeekPlussEquals();
 currentWeekPlussEquals();
 render('homepage');

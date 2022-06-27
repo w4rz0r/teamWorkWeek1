@@ -89,7 +89,7 @@ let minutesLeft = 10;
  }
  }
  
- clearInterval(myInterval);
+ //clearInterval(myInterval);
 
 //  function pause() {
 //      if (minutesLeft == 0)
