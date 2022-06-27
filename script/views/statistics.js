@@ -21,7 +21,9 @@ views.statistics = () => {
     </div>
 
     <div class="statisticsBottom">
-    <div class="bottombox"></div>
+    <div class="bottombox">
+    <canvas id="myChart" style="width:100%;max-width:600px"></canvas>
+    </div>
     </div>
 
 
