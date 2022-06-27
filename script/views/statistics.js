@@ -17,11 +17,11 @@ views.statistics = () => {
     </div>
 
 
-    <div class="rightbox">hei</div>
+    <div class="rightbox"></div>
     </div>
 
     <div class="statisticsBottom">
-    <div class="bottombox">hei</div>
+    <div class="bottombox"></div>
     </div>
 
 
