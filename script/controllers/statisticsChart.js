@@ -8,11 +8,11 @@ const myChart = new Chart(chartOne, {
   data: {
     labels: xValues,
     datasets: [{ 
-      data: allPushups,
+      data: [12, 24, 12, 52, 100, 75],
       borderColor: "red",
       fill: false
     }, { 
-      data: [1600,1700,1700,1900,2000,2700,4000,5000,6000,7000],
+      data: [50, 92, 86, 12, 54, 66],
       borderColor: "blue",
       fill: false
     }, { 
