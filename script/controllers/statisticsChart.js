@@ -8,30 +8,30 @@ const myChart = new Chart(chartOne, {
   data: {
     labels: xValues,
     datasets: [{ 
-      data: [12, 24, 12, 52, 100, 75],
+      data: [6, 15, 40, 70, 50, 40, 35, 20, 1, 5, 10, 20],
       borderColor: "red",
       fill: false
     }, { 
-      data: [50, 92, 86, 12, 54, 66],
+      data: [70, 55, 40, 50, 30, 15, 60, 70, 50, 45, 40, 30],
       borderColor: "blue",
       fill: false
     }, { 
-      data: [300,700,2000,5000,6000,4000,2000,1000,200,100],
+      data: [2, 10, 40, 30, 35, 20, 15, 6, 10, 25, 33, 60],
       borderColor: "green",
       fill: false
     },
     { 
-        data: [200,400,1000,1500],
+        data: [80, 70, 50, 55, 58, 66, 40, 30, 50, 75, 90, 100],
         borderColor: "yellow",
         fill: false
       },
       { 
-        data: [300,700,2000,5000,6000,4000,2000,1000,200,100],
+        data: [30, 35, 15, 1, 7, 30, 36, 50, 55, 57, 60, 70],
         borderColor: "purple",
         fill: false
       },
       { 
-        data: [300,700,2000,5000,6000,4000,2000,1000,200,100],
+        data: [90, 75, 70, 55, 40, 30, 15, 36, 40, 60, 30, 35],
         borderColor: "cyan",
         fill: false
       }

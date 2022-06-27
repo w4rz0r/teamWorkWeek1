@@ -13,7 +13,6 @@ views.userLogin = () => {
     <button onclick="loginUser(7)">kong Terje</button>
     <button onclick="loginUser(8)">Benjamin</button>
     <button onclick="loginUser(13)">aristoteles</button>
-    ${minutesLeft}
     `;
 }
 
