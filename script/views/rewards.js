@@ -9,8 +9,8 @@ views.rewards = () => {
     </section>
 
     <section class="rewards">
-        <h1 class="headline">Roadmap</h1>
-        <p>coupons</p> 
+        <h1 class="headline">Coupons</h1>
+        <p>Coupons</p> 
         ${printCoupon()}
     </section>
 `;}
