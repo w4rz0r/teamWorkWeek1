@@ -85,7 +85,6 @@ let minutesLeft = 10;
         minutesLeft = 10;
         render('currentWorkout');
      }
-     render();
  }
  }
  
