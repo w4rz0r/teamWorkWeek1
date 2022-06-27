@@ -7,7 +7,7 @@ function printNftInventory() {
                     <div class="rewards-col">
                         <img src="${nft.image}">
                         <div class="layer2">
-                            <h3>${nft.name}<br>${nft.cost}$</h3>
+                            <h3>${nft.name}</h3>
                         </div>
                     </div>
                 </div>
