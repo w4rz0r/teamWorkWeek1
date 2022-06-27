@@ -1,4 +1,5 @@
-var xValues = [100,200,300,400,500,600,700,800,900,1000];
+function drawChart(){
+var xValues = ['January', 'February', 'Mars', 'April', 'May', 'June', 'July', 'August', 'September', 'October', 'November', 'Desember'];
 
 let chartOne = document.getElementById('myChart');
 
@@ -7,20 +8,52 @@ const myChart = new Chart(chartOne, {
   data: {
     labels: xValues,
     datasets: [{ 
-      data: [860,1140,1060,1060,1070,1110,1330,2210,7830,2478],
+      data: allPushups,
       borderColor: "red",
       fill: false
     }, { 
       data: [1600,1700,1700,1900,2000,2700,4000,5000,6000,7000],
-      borderColor: "green",
+      borderColor: "blue",
       fill: false
     }, { 
       data: [300,700,2000,5000,6000,4000,2000,1000,200,100],
-      borderColor: "blue",
+      borderColor: "green",
       fill: false
-    }]
+    },
+    { 
+        data: [200,400,1000,1500],
+        borderColor: "yellow",
+        fill: false
+      },
+      { 
+        data: [300,700,2000,5000,6000,4000,2000,1000,200,100],
+        borderColor: "purple",
+        fill: false
+      },
+      { 
+        data: [300,700,2000,5000,6000,4000,2000,1000,200,100],
+        borderColor: "cyan",
+        fill: false
+      }
+]
   },
   options: {
     legend: {display: false}
   }
 });
+}
+
+
+testPushups();
+function testPushups(){
+
+
+// let pushups = user.doneExercises.filter((exercise) => weekNumber.weekNo === currentWeek);
+user.doneExercises.forEach((id) => {
+    if (id.id === 1) {
+    allPushups.push(id.reps);
+    }
+  })
+  console.log(allPushups);
+}
+

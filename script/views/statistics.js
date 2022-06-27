@@ -1,6 +1,7 @@
 views.statistics = () => {
   return /*html*/ `
     ${getNavigation()}
+    
     <div class="statisticsh1">
     <h1 class="headLine">Statistics</h1>
     </div>
@@ -22,7 +23,7 @@ views.statistics = () => {
 
     <div class="statisticsBottom">
     <div class="bottombox">
-    <canvas id="myChart" style="width:100%;max-width:600px"></canvas>
+    <canvas id="myChart" style="width:100%;max-width:100%;height:100%;"></canvas>
     </div>
     </div>
 
