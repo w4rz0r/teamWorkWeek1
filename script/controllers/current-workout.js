@@ -1,5 +1,6 @@
+/* variabler */
 const myInterval = setInterval(decreaseCount, 1000);
-// 60000 for et minutt
+let minutesLeft = 10;
 
 
 if (model.state.currentWorkoutId === null) {
@@ -11,23 +12,9 @@ function getNewWorkOut() {
     return ww;
 }
 
-// function setPickedWorkoutToDefault() {
-//     currentWorkOut = {
-//         id: null,
-//         name: '',
-//         img: '',
-//         rep: null,
-//         description: ''
-//     }
-// }
-
-
-
 function currentWorkoutInput() {
     model.state.currentWorkoutId = model.workouts[getNewWorkOut()].id;
 }
-
-
 
 function cancelCurrentWorkout() {
     currentWorkoutInput();
@@ -35,19 +22,8 @@ function cancelCurrentWorkout() {
     render();
 }
 
-
 function doneCurrentWorkout() {
     let currentWorkOut = model.workouts[model.state.currentWorkoutId - 1];
-    /* 
-    doneExercises: {
-    id: number;
-    name: string;
-    reps: number;
-    currencyPoints: number;
-    weekNo: number;
-    }
-    */
-
     let completedWorkOut = {
         id: currentWorkOut.id,
         name: currentWorkOut.name,
@@ -63,35 +39,15 @@ function doneCurrentWorkout() {
     render();
 }
 
-
-
-
-let minutesLeft = 10;
-
- //view
-//  function printTime() {
-//      let html = '';
-//      html +=/*html*/ `
-//      <div>${minutesLeft}</div>
-//      `;
-//  }
-
-
  function decreaseCount() {
-    if (model.state.silentMode === false){
-    console.log(minutesLeft);
-     minutesLeft--;
-     if (minutesLeft < 0) {
+    if (model.state.silentMode === false) {
+    minutesLeft--;
+    if (minutesLeft < 0) {
         minutesLeft = 10;
         render('currentWorkout');
      }
- }
+   }
  }
  
- //clearInterval(myInterval);
 
-//  function pause() {
-//      if (minutesLeft == 0)
-//      minutesLeft = null;
-//  }
 

@@ -44,16 +44,3 @@ const myChart = new Chart(chartOne, {
 }
 
 
-// testPushups();
-// function testPushups(){
-
-
-// // let pushups = user.doneExercises.filter((exercise) => weekNumber.weekNo === currentWeek);
-// user.doneExercises.forEach((id) => {
-//     if (id.id === 1) {
-//     allPushups.push(id.reps);
-//     }
-//   })
-//   console.log(allPushups);
-// }
-

@@ -4,9 +4,8 @@ views.inventory = () => {
     <section class="inventory">
         <h1 class="headLine">inventory</h1>
         <div class="inventory-container">
-        ${printNftInventory()}
-        ${printCouponInventory()}
+            ${printNftInventory()}
         </div>
-</section>
+    </section>
     `;
 }

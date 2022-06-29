@@ -1,7 +1,6 @@
 views.rewards = () => {
     return /*html*/ `
     ${getNavigation()}
-
     <section class="rewards">
         <h1 class="headLine">Choose Your rewards</h1>
         <p>NFT'S</p>
@@ -13,4 +12,5 @@ views.rewards = () => {
         <p>Coupons</p> 
         ${printCoupon()}
     </section>
-`;}
+`;
+}

@@ -172,6 +172,4 @@ const model = {
             { id: 6, name: 'Jumping jacks', value: 0 },
         ],
     },
-
-
 }
